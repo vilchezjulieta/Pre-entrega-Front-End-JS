@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Dekko</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/contacto.css">
+  <link rel="Dekko icon" href="img/logoDekko.png">
+</head>
+<body>
+
+  <!-- header -->
+  <header class="header">
+    <div class="top-banner">
+      <p>30% off en lámparas — ¡Tiempo limitado! <a href="Productos.html">Comprá ahora →</a></p>
+    </div>
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div class="logo">Dekko.</div>
+        <ul class="nav-links">
+          <li><a href="Inicio.html">Inicio</a></li>
+          <li><a href="Productos.html">Productos</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+          <li><a href="Carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- formulario -->
+  <main class="contacto-container">
+    <h1>Formulario de contacto</h1>
+    <form action="https://formspree.io/f/mnndqnjl" method="post" enctype="multipart/form-data">
+
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="last-name">Apellido</label>
+      <input type="text" id="last-name" name="last-name" required>
+
+      <fieldset>
+        <legend>Género</legend>
+        <label for="Hombre">Hombre</label>
+        <input type="radio" id="Hombre" name="genero" value="Hombre">
+        <label for="Mujer">Mujer</label>
+        <input type="radio" id="Mujer" name="genero" value="Mujer">
+        <label for="Otro">Otro</label>
+        <input type="radio" id="Otro" name="genero" value="Otro">
+      </fieldset>
+
+      <fieldset>
+        <legend>Intereses</legend>
+        <label><input type="checkbox" name="interes" value="decoracion"> Decoración</label><br>
+        <label><input type="checkbox" name="interes" value="iluminacion"> Iluminación</label><br>
+        <label><input type="checkbox" name="interes" value="mobiliario"> Mobiliario</label>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">Dekko.</div>
+      <nav class="footer-nav">
+        <a href="Inicio.html">Inicio</a>
+        <a href="Productos.html">Productos</a>
+        <a href="Contacto.html">Contacto</a>
+      </nav>
+    </div>
+    <p>© 2025 Dekko. Todos los derechos reservados — Julieta Vilchez – Talento Tech</p>
+  </footer>
+
+</body>
+</html>
